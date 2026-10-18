@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🔍 ForenTrace
+# ForenTrace
 
 ### Learn digital forensics by actually investigating.
 
 Open a case, examine the evidence, answer the questions, build the timeline and write a real forensic report, with a guide beside you at every step.
 
-**[▶ Try it live: forentrace.onrender.com](https://forentrace.onrender.com)**
+**[Try it live: forentrace.onrender.com](https://forentrace.onrender.com)**
 
 English · العربية · Light · Dark · Desktop · Phone
 
@@ -22,20 +22,20 @@ English · العربية · Light · Dark · Desktop · Phone
 
 ---
 
-## ✨ Why ForenTrace is different
+## Why ForenTrace is different
 
 Most forensics courses are slides and theory. ForenTrace puts you **inside a case**:
 
-- 🧭 **A guide, not a manual.** One clear task at a time, with why it matters and hints when you are stuck.
-- 🔬 **Real-looking evidence.** Emails with full headers, logs, browser history, photos with EXIF and files you open in a Hex view.
-- ❓ **Learn by answering.** Questions inside the case check your reasoning and explain the answer straight away.
-- 🕒 **Findings and a timeline.** Every finding points to the evidence behind it and lines up in time.
-- 📝 **A real forensic report.** Each section tells you what to write, why it matters and gives an example. Your draft saves itself.
-- 🎯 **Feedback on your work.** A score, a review of your report and clear tips for next time.
+- **A guide, not a manual.** One clear task at a time, with why it matters and hints when you are stuck.
+- **Real-looking evidence.** Emails with full headers, logs, browser history, photos with EXIF and files you open in a Hex view.
+- **Learn by answering.** Questions inside the case check your reasoning and explain the answer straight away.
+- **Findings and a timeline.** Every finding points to the evidence behind it and lines up in time.
+- **A real forensic report.** Each section tells you what to write, why it matters and gives an example. Your draft saves itself.
+- **Feedback on your work.** A score, a review of your report and clear tips for next time.
 
 ---
 
-## 🗂 The case library
+## The case library
 
 Five cases, from first steps to advanced, each teaching its own skills.
 
@@ -51,7 +51,7 @@ Five cases, from first steps to advanced, each teaching its own skills.
 
 ---
 
-## 🧭 Guided investigation
+## Guided investigation
 
 The case is split into stages: briefing, collection, examination, analysis, timeline, conclusions and report. You always know **what to do now**, **why it matters** and **how far you are**. Leave at any time, and the case picks up where you stopped.
 
@@ -59,7 +59,7 @@ The case is split into stages: briefing, collection, examination, analysis, time
 
 ---
 
-## 🔬 Evidence viewers
+## Evidence viewers
 
 Open each artifact the way an examiner would: emails with technical headers, log files, CSVs, chat exports, PDFs, photos with their metadata, and a Hex view that reveals what a file really is.
 
@@ -67,7 +67,7 @@ Open each artifact the way an examiner would: emails with technical headers, log
 
 ---
 
-## ❓ Questions that teach
+## Questions that teach
 
 Single choice, multiple choice and put-in-order questions sit inside the tasks. You get the answer and the reasoning right after you submit, so every mistake becomes a lesson.
 
@@ -75,7 +75,7 @@ Single choice, multiple choice and put-in-order questions sit inside the tasks. 
 
 ---
 
-## 🕒 Findings and Timeline
+## Findings and Timeline
 
 Record what you found, link it to its evidence and give it a time. ForenTrace lines everything up on a timeline in the case's time zone, so the story of the incident appears in front of you.
 
@@ -83,7 +83,7 @@ Record what you found, link it to its evidence and give it a time. ForenTrace li
 
 ---
 
-## 📝 Write a real forensic report
+## Write a real forensic report
 
 A professional report structure: summary, request and scope, methods, findings, timeline, conclusions, limitations and evidence disposition. Every section explains **what to write**, **why** and shows **an example**. Your findings and timeline flow into the report automatically, and your draft is saved as you type. Print or save it as PDF.
 
@@ -91,7 +91,7 @@ A professional report structure: summary, request and scope, methods, findings, 
 
 ---
 
-## 🎯 Feedback and report review
+## Feedback and report review
 
 After you submit, you get a score across the whole investigation (process, questions, findings, timeline and report) and a detailed review of your report: did you answer the question, cite your evidence, separate facts from guesses and state your limits?
 
@@ -102,7 +102,7 @@ After you submit, you get a score across the whole investigation (process, quest
 
 ---
 
-## 🌍 Arabic and English, light and dark
+## Arabic and English, light and dark
 
 The whole platform works in **Arabic (RTL)** and **English**, with professional forensic terms kept where they matter. Switch to dark mode for long sessions.
 
@@ -113,7 +113,7 @@ The whole platform works in **Arabic (RTL)** and **English**, with professional 
 
 ---
 
-## 📱 Works on your phone
+## Works on your phone
 
 <p align="center">
 <img src="screenshots/12-phone-landing.png" alt="Phone landing page" width="260">
@@ -123,26 +123,26 @@ The whole platform works in **Arabic (RTL)** and **English**, with professional 
 
 ---
 
-## 👥 Solo or as a team
+## Solo or as a team
 
 - **Solo:** play every role yourself, from collecting the evidence to submitting the report.
 - **Group:** split the roles (collector, custodian, examiner, analyst and case lead) and work the case together, with chain of custody between team members.
 
 ---
 
-## 🧩 What you will learn
+## What you will learn
 
 Chain of custody · Evidence integrity and hashes · Email header analysis · SPF and DMARC · Log correlation · Time zones and clock drift · File signatures · EXIF metadata · USB and file-access artifacts · Building a timeline · Separating facts from inferences · Writing a forensic report
 
 ---
 
-## 🛡 Training data only
+## Training data only
 
 Every case, person, company, IP address and domain in ForenTrace is **synthetic** and made up for training. No real data is used.
 
 ---
 
-## 🔓 Free to use, private source
+## Free to use, private source
 
 ForenTrace was built so that students and anyone interested in digital forensics can learn from it. **The platform is open for everyone to use online.**
 
@@ -154,7 +154,7 @@ Have feedback or an idea for a new case? Open an [issue](../../issues), we would
 
 ---
 
-## ⚙️ Built with
+## Built with
 
 React · TypeScript · Tailwind CSS · FastAPI · PostgreSQL
 
@@ -164,7 +164,7 @@ React · TypeScript · Tailwind CSS · FastAPI · PostgreSQL
 
 ### Ready to open your first case?
 
-**[▶ Start investigating at forentrace.onrender.com](https://forentrace.onrender.com)**
+**[Start investigating at forentrace.onrender.com](https://forentrace.onrender.com)**
 
 <br>
 

@@ -12,7 +12,9 @@ English · العربية · Light · Dark · Desktop · Phone
 
 <br>
 
-<img src="screenshots/01-landing.png" alt="ForenTrace landing page" width="900">
+<img src="screenshots/demo.gif" alt="Solving a ForenTrace case: reading the door log, answering, recording a finding, opening the camera picture, building the timeline and getting the score" width="900">
+
+<sub>A real run of the warm-up case, start to finish.</sub>
 
 </div>
 
@@ -22,64 +24,73 @@ English · العربية · Light · Dark · Desktop · Phone
 
 ---
 
-## Why ForenTrace is different
+## Can you solve it? The missing birthday cake
 
-Most forensics courses are slides and theory. ForenTrace puts you **inside a case**:
+Every new investigator starts here. It is a 15-minute puzzle that anyone can solve, even with zero tech background, and it teaches the whole ForenTrace way of working.
 
-- **A guide, not a manual.** One clear task at a time, with why it matters and hints when you are stuck.
-- **Real-looking evidence.** Emails with full headers, logs, browser history, photos with EXIF and files you open in a Hex view.
-- **Learn by answering.** Questions inside the case check your reasoning and explain the answer straight away.
-- **Findings and a timeline.** Every finding points to the evidence behind it and lines up in time.
-- **A real forensic report.** Each section tells you what to write, why it matters and gives an example. Your draft saves itself.
-- **Feedback on your work.** A score, a review of your report and clear tips for next time.
+> Sara put her birthday cake in the office fridge at noon. At 14:00, right before the party, only the empty plate was left.
+> You get a **kitchen door log**, a **camera picture**, the **team chat** and one item that has nothing to do with it. Who took the cake?
+
+**1. Look at the evidence.** The kitchen camera caught someone at 13:47:12. You can see a green jacket and a slice of cake. You can't see a face.
+
+<img src="screenshots/cake-04-picture.png" alt="Camera picture in the evidence viewer" width="900">
+
+**2. Read the log and answer.** Only one staff card opened the kitchen after the cake was last seen. Answer the question and the platform tells you right away if you're right, and why.
+
+<img src="screenshots/cake-02-answer.png" alt="Question answered with explanation" width="900">
+
+**3. Write it down as a finding.** Each finding is one fact, linked to the evidence that proves it, with the time it happened.
+
+<img src="screenshots/cake-03-finding.png" alt="Recording a finding linked to evidence" width="900">
+
+**4. Watch the story appear.** Your findings line up on the timeline. Now the chat message "I was in a meeting all afternoon" doesn't look so good.
+
+<img src="screenshots/cake-05-timeline.png" alt="Timeline of the case" width="900">
+
+**5. Get your result.** Write a short report and submit it. You get a score, what you did well, what you missed, and why.
+
+<img src="screenshots/cake-07-score.png" alt="Feedback with a score of 100" width="900">
+
+The twist: everything points to one person, but the face is never seen. A good investigator writes "the evidence indicates", not "he did it". ForenTrace checks for exactly that.
+
+---
+
+## Things that surprise people
+
+### The PDF that isn't a PDF
+
+An "invoice" called `INV-4471.pdf` opens straight in Hex view. The first two bytes are `MZ`, the signature of a Windows program, and ForenTrace flags it. The file name lied. The bytes don't.
+
+<img src="screenshots/wow-hex-fake-pdf.png" alt="Hex view revealing a Windows executable disguised as a PDF" width="900">
+
+### The email that wasn't from the CEO
+
+It looks like the CEO wrote it. Open the technical headers and the truth shows: it was sent through `nadir-logistlcs` (an **l** where the **i** should be), and any reply goes to an outside address.
+
+<img src="screenshots/04-artifact-viewer.png" alt="Email viewer with technical headers" width="900">
+
+### It tells you when you claim too much
+
+Write "Lina entered the server room" when the log only proves her badge was used, and the feedback calls it out. It also shows the clues you missed and why they mattered.
+
+<img src="screenshots/wow-overclaim.png" alt="Feedback showing missed clues and an overclaim" width="900">
 
 ---
 
 ## The case library
 
-Five cases, from first steps to advanced, each teaching its own skills.
+Six cases, from a warm-up puzzle to advanced investigations, each teaching its own skills.
 
-<img src="screenshots/02-cases.png" alt="Case library" width="900">
+<img src="screenshots/cake-01-library.png" alt="Case library" width="900">
 
 | # | Case | Type | Level | Time | You will practise |
 |---|------|------|-------|------|-------------------|
-| 01 | **Operation Open Door**: after-hours server room entry | Unauthorized access | Beginner | ~30 min | Access-control logs, correlating by time, facts vs inferences |
-| 02 | **Operation Quiet Exit**: data taken by a departing engineer | Insider threat | Intermediate | ~45 min | USB artifacts, file-access audit, UTC to local time |
-| 03 | **Operation Silver Ledger**: CEO impersonation payment fraud | Financial fraud | Intermediate | ~60 min | Email headers, SPF and DMARC, linking by IP, file signatures |
-| 04 | **Operation Leaked Blueprint**: a confidential layout posted online | Data leak | Advanced | ~60 min | EXIF metadata, hash comparison, elimination with limits |
-| 05 | **Operation Clock Drift**: payroll data sent out at night | Data exfiltration | Advanced | ~75 min | MFA fatigue, correcting a wrong clock, merging time zones |
-
----
-
-## Guided investigation
-
-The case is split into stages: briefing, collection, examination, analysis, timeline, conclusions and report. You always know **what to do now**, **why it matters** and **how far you are**. Leave at any time, and the case picks up where you stopped.
-
-<img src="screenshots/03-current-task.png" alt="Current task with guidance" width="900">
-
----
-
-## Evidence viewers
-
-Open each artifact the way an examiner would: emails with technical headers, log files, CSVs, chat exports, PDFs, photos with their metadata, and a Hex view that reveals what a file really is.
-
-<img src="screenshots/04-artifact-viewer.png" alt="Email viewer with technical headers" width="900">
-
----
-
-## Questions that teach
-
-Single choice, multiple choice and put-in-order questions sit inside the tasks. You get the answer and the reasoning right after you submit, so every mistake becomes a lesson.
-
-<img src="screenshots/05-question-feedback.png" alt="Question with explanation" width="900">
-
----
-
-## Findings and Timeline
-
-Record what you found, link it to its evidence and give it a time. ForenTrace lines everything up on a timeline in the case's time zone, so the story of the incident appears in front of you.
-
-<img src="screenshots/06-findings-timeline.png" alt="Findings and timeline" width="900">
+| 01 | **Operation Missing Cake**: who took the birthday cake? | Recommended first case | Beginner | ~15 min | Using the platform, linking evidence by time, statements vs records |
+| 02 | **Operation Open Door**: after-hours server room entry | Unauthorized access | Beginner | ~30 min | Access-control logs, correlating by time, facts vs inferences |
+| 03 | **Operation Quiet Exit**: data taken by a departing engineer | Insider threat | Intermediate | ~45 min | USB artifacts, file-access audit, UTC to local time |
+| 04 | **Operation Silver Ledger**: CEO impersonation payment fraud | Financial fraud | Intermediate | ~60 min | Email headers, SPF and DMARC, linking by IP, file signatures |
+| 05 | **Operation Leaked Blueprint**: a confidential layout posted online | Data leak | Advanced | ~60 min | EXIF metadata, hash comparison, elimination with limits |
+| 06 | **Operation Clock Drift**: payroll data sent out at night | Data exfiltration | Advanced | ~75 min | MFA fatigue, correcting a wrong clock, merging time zones |
 
 ---
 
@@ -89,16 +100,9 @@ A professional report structure: summary, request and scope, methods, findings, 
 
 <img src="screenshots/07-report-guidance.png" alt="Report guidance" width="900">
 
----
+After you submit, the report is reviewed point by point: did you answer the question, cite your evidence, separate facts from guesses and state your limits?
 
-## Feedback and report review
-
-After you submit, you get a score across the whole investigation (process, questions, findings, timeline and report) and a detailed review of your report: did you answer the question, cite your evidence, separate facts from guesses and state your limits?
-
-<p>
-<img src="screenshots/08-feedback.png" alt="Evaluation" width="445">
-<img src="screenshots/09-report-review.png" alt="Report review" width="445">
-</p>
+<img src="screenshots/09-report-review.png" alt="Report review" width="900">
 
 ---
 

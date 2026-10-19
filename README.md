@@ -164,6 +164,15 @@ React · TypeScript · Tailwind CSS · FastAPI · PostgreSQL
 
 ---
 
+## ForenTrace Team
+
+ForenTrace was designed and built together by:
+
+- **Hoor** · [@HoorFawaz](https://github.com/HoorFawaz)
+- **Danah** · [@danahfawaz](https://github.com/danahfawaz)
+
+---
+
 <div align="center">
 
 ### Ready to open your first case?

@@ -150,7 +150,7 @@ To protect the work behind it, the source code, case content and evaluation logi
 
 > المنصة متاحة للجميع للاستخدام والتعلّم مجانًا، أما الكود وتفاصيل المشروع فهي خاصة حفظًا للحقوق.
 
-Have feedback or an idea for a new case? Open an [issue](../../issues), we would love to hear from you.
+Have feedback or an idea for a new case? Email us at [forentrace.team@gmail.com](mailto:forentrace.team@gmail.com), we would love to hear from you.
 
 ---
 
